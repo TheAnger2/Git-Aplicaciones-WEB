@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        #logo {
+            width: 80px; 
+            height: auto;
+        }
+
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            padding: 8px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+  
+        <img id="logo" src="logo/Logo.png" alt="Logo de la página">
+
+   
+        <nav>
+            <a href="apartadosactividad1/inicio.html">Inicio</a>
+            <a href="apartadosactividad1/acerca.html">Acerca de nosotros</a>
+            <a href="apartadosactividad1/servicios.html">Servicios</a>
+            <a href="apartadosactividad1/contacto.html">Contacto</a>
+        </nav>
+
+ 
+        <form action="/buscar" method="get">
+            <input type="text" name="q" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </header>
+
+  
+
+</body>
+</html>
