@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Ejemplo</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .chat-container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .mensaje {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .mensaje-info {
+      flex: 1;
+    }
+
+    .nombre {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .fecha {
+      font-size: 0.8em;
+      color: #888;
+    }
+
+    .texto {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mensaje-izquierda .avatar {
+      order: 2;
+      margin-left: 10px;
+      margin-right: 0;
+    }
+
+    .mensaje-izquierda .mensaje-info {
+      order: 1;
+      text-align: left;
+    }
+
+    .mensaje-derecha {
+      flex-direction: row-reverse;
+    }
+
+    .mensaje-derecha .avatar {
+      order: 2;
+      margin-right: 10px;
+      margin-left: 0;
+    }
+
+    .mensaje-derecha .mensaje-info {
+      order: 1;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="mensaje mensaje-izquierda">
+      <img src="avatares/av2.jpeg" alt="Avatar Persona 1" class="avatar">
+      <div class="mensaje-info">
+        <div class="nombre">Persona 1</div>
+        <div class="fecha">Fecha: 04/02/2024</div>
+        <div class="texto">¡Hola! ¿Cómo estás?</div>
+      </div>
+    </div>
+
+    <div class="mensaje mensaje-derecha">
+      <img src="avatares/av1.jpeg" alt="Avatar Persona 2" class="avatar">
+      <div class="mensaje-info">
+        <div class="nombre">Persona 2</div>
+        <div class="fecha">Fecha: 04/02/2024</div>
+        <div class="texto">¡Hola! Estoy bien, gracias por preguntar.</div>
+      </div>
+    </div>
+
+ 
+
+  </div>
+</body>
+</html>
