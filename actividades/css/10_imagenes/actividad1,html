@@ -80,7 +80,7 @@
 <body>
   <div class="chat-container">
     <div class="mensaje mensaje-izquierda">
-      <img src="avatares/av2.jpeg" alt="Avatar Persona 1" class="avatar">
+      <img src="./avatares/av1.jpeg" alt="Avatar Persona 1" class="avatar">
       <div class="mensaje-info">
         <div class="nombre">Persona 1</div>
         <div class="fecha">Fecha: 04/02/2024</div>
@@ -89,7 +89,7 @@
     </div>
 
     <div class="mensaje mensaje-derecha">
-      <img src="avatares/av1.jpeg" alt="Avatar Persona 2" class="avatar">
+      <img src="./avatares/av2.jpeg" alt="Avatar Persona 2" class="avatar">
       <div class="mensaje-info">
         <div class="nombre">Persona 2</div>
         <div class="fecha">Fecha: 04/02/2024</div>
