@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Clock</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .clock {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #000000;
+            border-radius: 50%;
+            position: relative;
+        }
+        .clock-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .hand {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            transform-origin: 100%;
+        }
+        .hand.second {
+            background-color: #f00;
+        }
+        .hand.minute {
+            background-color: #0f0;
+        }
+        .hand.hour {
+            background-color: #00f;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .hand.second {
+            animation: rotate 60s linear infinite;
+        }
+        .hand.minute {
+            animation: rotate 3600s linear infinite;
+        }
+        .hand.hour {
+            animation: rotate 43200s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour"></div>
+            <div class="hand minute"></div>
+            <div class="hand second"></div>
+        </div>
+    </div>
+</body>
+</html>
