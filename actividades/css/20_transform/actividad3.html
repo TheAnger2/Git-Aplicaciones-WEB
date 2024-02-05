@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  left: 50px;
+  top: 50px;
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  left: 150px;
+  top: 50px;
+  transition: left 0.5s ease;
+}
+
+.blue:hover {
+  left: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle red"></div>
+        <div class="circle blue"></div>
+      </div>
+</body>
+</html>
