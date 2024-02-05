@@ -1,0 +1,58 @@
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      overflow: hidden;
+    }
+  
+    .sun {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #f8b032;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  
+    .moon {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #535050;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      animation: solarEclipse 7s infinite linear;
+      z-index: 2;
+    }
+  
+    @keyframes solarEclipse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      30% {
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      60% {
+        transform: translate(-50%, -50%) scale(0.2);
+      }
+      90% {
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  </style>
+  
+  <!-- Sun and Moon elements -->
+  <div class="sun"></div>
+  <div class="moon"></div>
