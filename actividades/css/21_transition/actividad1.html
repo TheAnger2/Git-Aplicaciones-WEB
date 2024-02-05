@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-form {
+  font-family: Arial, sans-serif;
+}
+
+#my-form label {
+  display: block;
+  margin-top: 20px;
+}
+
+#my-form input[type="text"], #my-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+#my-form input[type="text"]:focus, #my-form input[type="number"]:focus {
+  border-color: transparent;
+  transform: scale(1.1);
+}
+
+#my-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#my-form button:hover {
+  background-color: transparent;
+  color: #4CAF50;
+}
+    </style>
+</head>
+<body>
+    <form id="my-form">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phone">Teléfono:</label><br>
+        <input type="number" id="phone" name="phone"><br>
+        <button type="submit">Enviar</button>
+      </form>
+</body>
+</html>
