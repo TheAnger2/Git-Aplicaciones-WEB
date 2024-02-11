@@ -11,91 +11,160 @@
        .estil{
         text-align: center;
        }
+       nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: block;
+    box-sizing: content-box;
+    border: 4px solid black;
+    background-color: aliceblue;
+    color: black;
+    font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: content-box;
+  border: 2px solid black;
+  background-color: aliceblue;
+}
+
+.column {
+  width: 45%;
+  padding: 100px;
+  box-sizing: border-box;
+  border: 5px ;
+}
+
+.html-column {
+  order: 1;
+}
+
+.css-column {
+  order: 2;
+}
     </style>
+ 
 </head>
 <body>
-    <h2 class="estil">Lista de actividades HTML y CS</h2>
-    <ul><h3>Índice</h3></ul>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                 <ul><h1>HTML</h1></ul>
-                 <br>
-                 <ul>
-                    <li><h2>02_Formato</h2></li>
-                    <li><a href="html/02_formato/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad3.html">Actividad 3</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad4.html">Actividad 4</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad5.html">Actividad 5</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad6.html">Actividad 6</a></li>
-                    <br>
-                    <li><a href="html/02_formato/actividad7.html">Actividad 7</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>03_Hipervínculos</h2></li>
-                    <li><a href="html/03_hipervinculos/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/03_hipervinculos/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/03_hipervinculos/actividad3.html">Actividad 3</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>04_Listas</h2></li>
-                    <li><a href="html/04_listas/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/04_listas/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/04_listas/actividad3.html">Actividad 3</a></li>
-                    <br>
-                    <li><a href="html/04_listas/actividad4.html">Actividad 4</a></li>
-                    <br>
-                    <li><a href="html/04_listas/actividad5.html">Actividad 5</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>05_Imágenes</h2></li>
-                    <li><a href="html/05_imagenes/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/05_imagenes/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/05_imagenes/actividad3.html">Actividad 3</a></li>
-                    <br>
-                    <li><a href="html/05_imagenes/actividad4.html">Actividad 4</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>06_Tablas</h2></li>
-                    <li><a href="html/06_tablas/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/06_tablas/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/06_tablas/actividad3.html">Actividad 3</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>07_Formularios</h2></li>
-                    <li><a href="html/07_formularios/actividad1.html">Actividad 1</a></li>
-                    <br>
-                    <li><a href="html/07_formularios/actividad2.html">Actividad 2</a></li>
-                    <br>
-                    <li><a href="html/07_formularios/actividad3.html">Actividad 3</a></li>
-                    <br>
-                    <li><a href="html/07_formularios/actividad4.html">Actividad 4</a></li>
-                 </ul>
-                 <br>
-                 <ul>
-                    <li><h2>08_Multimedia</h2></li>
-                 </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+   
+   <div class="container">
+      <h1 class="title">Mis actividades de HTML y CSS</h2>
+        
+      <div class="column html-column">
+         <h1>HTML</h1>
+         <ul>
+         <li><h2>02_Formato</h2></li>
+         </ul>
+          <ul>
+            <li><a href="html/02_Formato/Actividad1.html">Actividad 1</a></li>
+            <li><a href="html/02_Formato/Actividad2.html">Actividad 2</a></li>
+            <li><a href="html/02_Formato/Actividad3.html">Actividad 3</a></li>
+            <li><a href="html/02_Formato/Actividad4.html">Actividad 4</a></li>
+            <li><a href="html/02_Formato/Actividad5.html">Actividad 5</a></li>
+            <li><a href="html/02_Formato/Actividad6.html">Actividad 6</a></li>
+            <li><a href="html/02_Formato/Actividad7.html">Actividad 7</a></li>
+          </ul>
+          <br>
+          <ul>
+            <li><h2>03_Hipervínclos</h2></li>
+          </ul>
+          <ul>
+          <li><a href="html/03_hipervinculos/actividad1.html">Actividad 1</a></li>
+          <li><a href="html/03_hipervinculos/actividad2.html">Actividad 2</a></li>
+          <li><a href="html/03_hipervinculos/actividad3.html">Actividad 3</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>04_Listas</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/04_listas/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/04_listas/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/04_listas/actividad3.html">Actividad 3</a></li>
+            <li><a href="html/04_listas/actividad4.html">Actividad 4</a></li>
+            <li><a href="html/04_listas/actividad5.html">Actividad 5</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>05_Imágenes</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/05_imagenes/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/05_imagenes/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/05_imagenes/actividad3.html">Actividad 3</a></li>
+            <li><a href="html/05_imagenes/actividad4.html">Actividad 4</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>06_Tablas</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/06_tablas/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/06_tablas/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/06_tablas/actividad3.html">Actividad 3</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>07_Formularios</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/07_formularios/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/07_formularios/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/07_formularios/actividad3.html">Actividad 3</a></li>ç
+            <li><a href="html/07_formularios/actividad4.html">Actividad 4</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>08_Multimedia</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/08_multimedia/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/08_multimedia/actividad2.html">Actividad 2</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>09_Contenido</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/09_contenido/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/09_contenido/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/09_contenido/actividad2_1.html">Actividad 3</a></li>
+         </ul>
+         <br>
+         <ul>
+            <li><h2>11_Interactivos</h2></li>
+         </ul>
+         <ul>
+            <li><a href="html/11_interactivos/actividad1.html">Actividad 1</a></li>
+            <li><a href="html/11_interactivos/actividad2.html">Actividad 2</a></li>
+            <li><a href="html/11_interactivos/actividad3.html">Actividad 3</a></li>
+         </ul>
+      
+      
+      
+      </div>
+      <div class="column css-column">
+       <h1>CSS</h1>
+       <ul>
+         <li><h2>Selectores</h2></li>
+       </div>
+    
+</body>
