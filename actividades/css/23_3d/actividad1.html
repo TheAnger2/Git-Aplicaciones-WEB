@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+ .image-container {
+    width: 300px; 
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+  }
+  .image-container:hover .image {
+    transform: translateZ(-5px) scale(1.5);
+  }
+  
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="./oveja/dfd75baa5e0392191687f9ce37001fc0.jpg" alt="Image" class="image">
+        <div class="hover-effect"></div>
+      </div>
+</body>
+</html>
