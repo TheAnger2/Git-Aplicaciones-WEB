@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .cartel {
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            animation: mostrar 5s forwards;
+        
+        }
+        @keyframes mostrar {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       .estil{
+        text-align: center;
+       }
+       nav {
+            margin-top: 0px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin:  15px;
+            font-weight: bold;
+        }
+        header {
+            background-color: #4daae7;
+            padding: 10px;
+            text-align: center;
+            border: black 2px solid;
+            font-size: large;
+        }
+    </style>
+     <header>
+
+ 
+        <nav>
+          
+            <a href="actividades.html">Actividades</a>
+            <a href="cv.html">Currículum</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="index.html">Inicio</a>
+        </nav>
+     
+     
+      
+     </header>
+</head>
+<body>
+ <h1> Mi propia página WEB</h1> 
+ <br>
+
+ <a href="actividades/actividades.html">Ir a actividades</a>
+ <div class="cartel">
+    <p>Este sitio web utiliza cookies para mejorar su experiencia.</p>
+</div>
+</body>
+</html>
